@@ -7,7 +7,7 @@ echo -e "127.0.0.1\t\tlocalhost localhost.localdomain localhost4 localhost4.loca
 echo -e "::1\t\t\tlocalhost localhost.localdomain localhost6 localhost6.localdomain6" >> /etc/hosts
 echo -e "10.0.0.2\t\thack.me" >> /etc/hosts
 echo -e "10.0.0.2\t\tworkstation.ctf.local" >> /etc/hosts
-dnf -y install httpd
+dnf -y install httpd gcc
 
 # Tag in cookie
 # bcCTF{h1dd3n_1n_pl41n_s1ght}
@@ -30,5 +30,8 @@ wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/about.html -
 # Binary to ASCII - Cyberchef
 # bcCTF{fr3qu3ncy_4n4lys1s_w1ns}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii -O /var/www/html/resources.html
+
+wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/buffer_overflow.c -O /tmp/buffer_overflow.c
+gcc -fno-stack-protector -z execstack -o /tmp/auth_program /tmp/buffer_overflow.c
 
 reboot
