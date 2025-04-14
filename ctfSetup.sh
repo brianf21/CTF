@@ -37,4 +37,4 @@ wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/buffer_overflow.c -O /tmp/buffer_overflow.c
 gcc -fno-stack-protector -z execstack -o /tmp/auth_program /tmp/buffer_overflow.c
 
-reboot
+# reboot
