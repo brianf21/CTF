@@ -44,7 +44,7 @@ def create_binary_file_with_hidden_flag(filename, flag):
     }
 
 # Create the file with the hidden flag
-result = create_binary_file_with_hidden_flag('/tmp/hidden_flag_file.bin', 'bcCTF{y0u_f0und_th3_fl4g}')
+result = create_binary_file_with_hidden_flag('/tmp/cute_kitty.png', 'bcCTF{y0u_f0und_th3_fl4g}')
 
 # Print information about the file (for demonstration purposes)
 print(f"Binary file created: {result['filename']}")
