@@ -15,3 +15,4 @@ chmod +x /tmp/create_binary.py
 python3 /tmp/create_binary.py
 rm -f /tmp/create_binary.py
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii -O /tmp/secret
+wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/about.html -O /var/www/html/about.html
