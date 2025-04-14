@@ -8,6 +8,9 @@ echo -e "::1\t\t\tlocalhost localhost.localdomain localhost6 localhost6.localdom
 echo -e "10.0.0.2\t\thack.me" >> /etc/hosts
 echo -e "10.0.0.2\t\tworkstation.ctf.local" >> /etc/hosts
 dnf -y install httpd
+
+# Tag in cookie
+# bcCTF{h1dd3n_1n_pl41n_s1ght}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/index.html -O /var/www/html/index.html
 systemctl enable --now httpd
 
@@ -24,6 +27,8 @@ wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii
 # Tag in about.html bcCTF{pr1ntf_1s_d4ng3r0us}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/about.html -O /var/www/html/about.html
 
-# Binary to ASCII
+# Binary to ASCII - Cyberchef
 # bcCTF{fr3qu3ncy_4n4lys1s_w1ns}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii -O /var/www/html/resources.html
+
+reboot
