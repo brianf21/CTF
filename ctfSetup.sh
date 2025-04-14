@@ -10,9 +10,16 @@ echo -e "10.0.0.2\t\tworkstation.ctf.local" >> /etc/hosts
 dnf -y install httpd
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/index.html -O /var/www/html/index.html
 systemctl enable --now httpd
+
+# Binary Blob
+# Saved file as /tmp/cute_kitty.png bcCTF{y0u_f0und_th3_fl4g}
+# strings /tmp/cute_kitty.png
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/create_binary.py -O /tmp/create_binary.py
 chmod +x /tmp/create_binary.py
 python3 /tmp/create_binary.py
 rm -f /tmp/create_binary.py
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii -O /tmp/secret
+
+# Hidden in plain site - font is the same color as background
+# Tag in about.html bcCTF{pr1ntf_1s_d4ng3r0us}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/about.html -O /var/www/html/about.html
