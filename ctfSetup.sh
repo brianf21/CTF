@@ -23,3 +23,5 @@ wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii
 # Hidden in plain site - font is the same color as background
 # Tag in about.html bcCTF{pr1ntf_1s_d4ng3r0us}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/about.html -O /var/www/html/about.html
+
+wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii -O /var/www/html/resources.html
