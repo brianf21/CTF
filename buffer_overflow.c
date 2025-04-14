@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 void print_flag() {
-    printf("Congratulations! Here's your flag: picoCTF{0v3rfl0w_y0ur_w4y_t0_v1ct0ry}\n");
+    printf("Congratulations! Here's your flag: bcCTF{0v3rfl0w_y0ur_w4y_t0_v1ct0ry}\n");
 }
 
 void authenticate() {
