@@ -25,7 +25,8 @@ wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/create_binar
 chmod +x /tmp/create_binary.py
 python3 /tmp/create_binary.py
 rm -f /tmp/create_binary.py
-wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii -O /tmp/secret
+# wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii -O /tmp/secret
+rm -f /tmp/secret
 
 # Hidden in plain site - font is the same color as background
 # Tag in about.html bcCTF{pr1ntf_1s_d4ng3r0us}
@@ -40,6 +41,7 @@ wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii
 # bcCTF{0v3rfl0w_y0ur_w4y_t0_v1ct0ry}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/buffer_overflow.c -O /tmp/buffer_overflow.c
 gcc -fno-stack-protector -z execstack -o /tmp/auth_program /tmp/buffer_overflow.c
+rm -f /tmp/buffer_overflow.c
 
 # Substitution Confusion
 # Flag: bcCTF{fr3qu3ncy_4n4lys1s_w1ns}
