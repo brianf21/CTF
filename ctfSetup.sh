@@ -1,6 +1,7 @@
 #!/bin/bash
 
-nmcli con del ens8-static
+nmcli con del ens8-static 2> /dev/null
+nmcli con del "Profile 1" 2> /dev/null
 nmcli con add con-name ens8-static ip4 10.0.0.2/24 gw4 10.0.0.1 ifname ens8 type ethernet ipv4.dns 8.8.8.8,8.8.4.4 ipv4.method manual autoconnect yes
 hostnamectl set-hostname workstation.ctf.local
 echo -e "127.0.0.1\t\tlocalhost localhost.localdomain localhost4 localhost4.localdomain4" > /etc/hosts
