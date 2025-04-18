@@ -45,4 +45,6 @@ gcc -fno-stack-protector -z execstack -o /tmp/auth_program /tmp/buffer_overflow.
 # Flag: bcCTF{fr3qu3ncy_4n4lys1s_w1ns}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/challenges.html -O /var/www/html/challenges.html
 
+history -c
+
 reboot
