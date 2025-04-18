@@ -7,9 +7,10 @@ echo -e "127.0.0.1\t\tlocalhost localhost.localdomain localhost4 localhost4.loca
 echo -e "::1\t\t\tlocalhost localhost.localdomain localhost6 localhost6.localdomain6" >> /etc/hosts
 echo -e "10.0.0.2\t\thack.me" >> /etc/hosts
 echo -e "10.0.0.2\t\tworkstation.ctf.local" >> /etc/hosts
-dnf -y install httpd gcc
+
 dnf config-manager --set-enabled crb
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+dnf -y install httpd gcc imagemagick
 
 # Tag in cookie
 # bcCTF{h1dd3n_1n_pl41n_s1ght}
@@ -42,5 +43,6 @@ gcc -fno-stack-protector -z execstack -o /tmp/auth_program /tmp/buffer_overflow.
 # Substitution Confusion
 # Flag: bcCTF{fr3qu3ncy_4n4lys1s_w1ns}
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/challenges.html -O /var/www/html/challenges.html
+
 
 # reboot
