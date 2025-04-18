@@ -37,4 +37,8 @@ wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/binary-ascii
 wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/buffer_overflow.c -O /tmp/buffer_overflow.c
 gcc -fno-stack-protector -z execstack -o /tmp/auth_program /tmp/buffer_overflow.c
 
+# Substitution Confusion
+# Flag: bcCTF{fr3qu3ncy_4n4lys1s_w1ns}
+wget https://raw.githubusercontent.com/brianf21/CTF/refs/heads/main/challenges.html -O /var/www/html/challenges.html
+
 # reboot
