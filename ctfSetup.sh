@@ -8,6 +8,8 @@ echo -e "::1\t\t\tlocalhost localhost.localdomain localhost6 localhost6.localdom
 echo -e "10.0.0.2\t\thack.me" >> /etc/hosts
 echo -e "10.0.0.2\t\tworkstation.ctf.local" >> /etc/hosts
 dnf -y install httpd gcc
+dnf config-manager --set-enabled crb
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 
 # Tag in cookie
 # bcCTF{h1dd3n_1n_pl41n_s1ght}
