@@ -9,7 +9,7 @@ echo -e "10.0.0.2\t\thack.me" >> /etc/hosts
 echo -e "10.0.0.2\t\tworkstation.ctf.local" >> /etc/hosts
 
 dnf config-manager --set-enabled crb
-dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 dnf -y install httpd gcc imagemagick
 
 # Tag in cookie
