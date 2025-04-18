@@ -10,7 +10,7 @@ echo -e "10.0.0.2\t\tworkstation.ctf.local" >> /etc/hosts
 
 dnf config-manager --set-enabled crb
 dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
-dnf -y install httpd gcc imagemagick
+dnf -y install httpd gcc ImageMagick
 
 # Tag in cookie
 # bcCTF{h1dd3n_1n_pl41n_s1ght}
